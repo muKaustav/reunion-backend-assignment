@@ -1,6 +1,6 @@
 # API Endpoints
 
-<!-- - POST /api/authenticate should perform user authentication and return a JWT token.
+- POST /api/authenticate should perform user authentication and return a JWT token.
 
   - INPUT: Email, Password
   - RETURN: JWT token
@@ -20,7 +20,7 @@
 - POST /api/comment/{id} add comment for post with {id} by the authenticated user.
   - Input: Comment
   - Return: Comment-ID
-- GET api/posts/{id} would return a single post with {id} populated with its number of likes and comments -->
+- GET api/posts/{id} would return a single post with {id} populated with its number of likes and comments
 - GET /api/all_posts would return all posts created by authenticated user sorted by post time.
   - RETURN: For each post return the following values
     - id: ID of the post
