@@ -1,0 +1,27 @@
+{
+  "name": "reunion-backend-assignment",
+  "version": "1.0.0",
+  "description": "- POST /api/authenticate should perform user authentication and return a JWT token.     - INPUT: Email, Password     - RETURN: JWT token",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muKaustav/reunion-backend-assignment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muKaustav/reunion-backend-assignment/issues"
+  },
+  "homepage": "https://github.com/muKaustav/reunion-backend-assignment#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "pg": "^8.7.3"
+  }
+}
