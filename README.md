@@ -60,4 +60,12 @@
 - Linkedin: [@kaustavmukhopadhyay](https://www.linkedin.com/in/kaustavmukhopadhyay/)
 - Github: [@muKaustav](https://github.com/muKaustav)
 
+<br/>
+
+## 📝 | License
+
+Copyright © 2021 [Kaustav Mukhopadhyay](https://github.com/muKaustav).<br />
+This project is [MIT](./LICENSE) licensed.
+
+
 ---
