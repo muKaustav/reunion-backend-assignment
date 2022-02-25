@@ -57,34 +57,46 @@ let getAllPosts = async (req, res) => {
 
     let user_id = req.user.id
 
-    // pool.query('SELECT id, title, "desc", created_at, (SELECT input FROM comment WHERE post_id = post.id) AS comments, likes FROM post WHERE user_id = $1 ORDER BY created_at DESC',
-    //     [user_id], (err, result) => {
-    //         if (err) {
-    //             console.log(err)
-    //             res.status(500).send(err)
-    //         } else {
-    //             res.status(200).json(result.rows)
-    //         }
-    //     })
-
     pool.query('SELECT post.id, post.title, post.desc, post.created_at, comment.input, post.likes  FROM post INNER JOIN comment ON post.id = comment.post_id WHERE post.user_id = $1 ORDER BY post.created_at DESC',
         [user_id], (err, result) => {
             if (err) {
                 console.log(err)
                 res.status(500).send(err)
             } else {
-                let posts = result.rows.map(post => {
-                    // check if post with id exists in posts array
-                    let comments = post.input ? post.input.split(',') : []
-                    return {
-                        id: post.id,
-                        title: post.title,
-                        desc: post.desc,
-                        created_at: post.created_at,
-                        comments: comments,
-                        likes: post.likes
+                let i = 0
+
+                comments = []
+                let posts = []
+
+                while (i < result.rows.length - 1) {
+                    if (result.rows[i].id == result.rows[i + 1].id) {
+                        comments.push(result.rows[i].input)
+                        i++
+                    } else {
+                        comments.push(result.rows[i].input)
+                        posts.push({
+                            id: result.rows[i].id,
+                            title: result.rows[i].title,
+                            desc: result.rows[i].desc,
+                            created_at: result.rows[i].created_at,
+                            comments: comments,
+                            likes: result.rows[i].likes
+                        })
+                        comments = []
+                        i++
                     }
+                }
+
+                comments.push(result.rows[i].input)
+                posts.push({
+                    id: result.rows[i].id,
+                    title: result.rows[i].title,
+                    desc: result.rows[i].desc,
+                    created_at: result.rows[i].created_at,
+                    comments: comments,
+                    likes: result.rows[i].likes
                 })
+
                 res.status(200).json(posts)
             }
         })
