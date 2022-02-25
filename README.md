@@ -43,7 +43,10 @@
     - comments: Array of comments, for the particular post
     - likes: Number of likes for the particular post
 
-**NOTE:** After authenticating through the _**/api/authenticate**_ endpoint, you must use the JWT token to access the other endpoints through the header `x-access-token: {JWT_TOKEN}`
+**NOTE:**
+
+- After authenticating through the _**/api/authenticate**_ endpoint, you must use the JWT token to access the other endpoints through the header `x-access-token: {JWT_TOKEN}`.
+- Dummy authentication details: email: `mu.kaustav@gmail.com`, password: `ilovepizzza`.
 
 <br/>
 
