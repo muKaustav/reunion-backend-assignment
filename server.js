@@ -13,6 +13,13 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
+app.get('/', (req, res) => {
+    res.json({
+        message: "Hello World",
+        repository: "https://github.com/muKaustav/reunion-backend-assignment"
+    })
+})
+
 app.use('/api', authRoute)
 app.use('/api', userRoute)
 app.use('/api', postRoute)
