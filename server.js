@@ -20,10 +20,6 @@ app.use('/api', likeRoute)
 app.use('/api', commentRoute)
 app.use('/api', followerRoute)
 
-app.get('*', (req, res) => {
-    res.send('<h1>404</h1>')
-})
-
 PORT = process.env.PORT || 5000
 
 app.listen(PORT, () => {
