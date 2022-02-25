@@ -43,6 +43,8 @@
     - comments: Array of comments, for the particular post
     - likes: Number of likes for the particular post
 
+**NOTE:** After authenticating through the _**/api/authenticate**_ endpoint, you must use the JWT token to access the other endpoints through the header `x-access-token: {JWT_TOKEN}`
+
 <br/>
 
 ## 📘 | Database Architecture
@@ -66,6 +68,5 @@
 
 Copyright © 2021 [Kaustav Mukhopadhyay](https://github.com/muKaustav).<br />
 This project is [MIT](./LICENSE) licensed.
-
 
 ---
