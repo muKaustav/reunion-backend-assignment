@@ -48,7 +48,7 @@
 ## 📘 | Database Architecture
 
 <p align = center>
-    <img alt="getURL" src="https://raw.githubusercontent.com/muKaustav/ShortURL/master/client/src/assets/images/getURLs.png" target="_blank" />
+    <img alt="getURL" src="https://raw.githubusercontent.com/muKaustav/reunion-backend-assignment/main/assets/db_architecture.png" target="_blank" />
 </p>
 
 <br/>
