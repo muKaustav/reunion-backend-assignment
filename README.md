@@ -1,4 +1,16 @@
-# API Endpoints
+<h1 align="center">Reunion Backend Assignment</h1>
+<br/>
+
+## 📚 | Problem Statement
+
+- Build APIs for a social media platform in either NodeJS or Python.
+- The API should support features like getting a user profile, follow a user, upload a post, delete a post, like a post, unlike a liked post, and comment on a post.
+- Design the database schema and implement in PostgreSQL.
+- _This is the take home assignment for the role of Backend intern at <a href="https://www.re-union.one/" target='_blank'>Reunion</a>._
+
+<br/>
+
+## 🚀 | API Endpoints
 
 - POST /api/authenticate should perform user authentication and return a JWT token.
 
@@ -30,3 +42,22 @@
     - created_at: Date and time when the post was created
     - comments: Array of comments, for the particular post
     - likes: Number of likes for the particular post
+
+<br/>
+
+## 📘 | Database Architecture
+
+<p align = center>
+    <img alt="getURL" src="https://raw.githubusercontent.com/muKaustav/ShortURL/master/client/src/assets/images/getURLs.png" target="_blank" />
+</p>
+
+<br/>
+
+## 🧑🏽 | Author
+
+**Kaustav Mukhopadhyay**
+
+- Linkedin: [@kaustavmukhopadhyay](https://www.linkedin.com/in/kaustavmukhopadhyay/)
+- Github: [@muKaustav](https://github.com/muKaustav)
+
+---
