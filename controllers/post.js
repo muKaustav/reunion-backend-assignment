@@ -62,6 +62,10 @@ let getAllPosts = async (req, res) => {
             if (err) {
                 console.log(err)
                 res.status(500).send(err)
+            } else if (result.rows.length === 0) {
+                res.json({
+                    message: 'No posts found'
+                })
             } else {
                 let i = 0
 
