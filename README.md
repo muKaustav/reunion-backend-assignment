@@ -69,7 +69,7 @@
 
 ## 📝 | License
 
-Copyright © 2021 [Kaustav Mukhopadhyay](https://github.com/muKaustav).<br />
+Copyright © 2022 [Kaustav Mukhopadhyay](https://github.com/muKaustav).<br />
 This project is [MIT](./LICENSE) licensed.
 
 ---
